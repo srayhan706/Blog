@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background:
+    radial-gradient(circle at top left, rgba(255, 236, 179, 0.65), transparent 28%),
+    linear-gradient(180deg, #fffaf2 0%, #f4f7fb 50%, #edf3f8 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-body: 'Manrope', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --text-strong: #152033;
+  --text-muted: #415066;
+  --text-soft: #6f7b8e;
+  --brand-blue: #1976d2;
+  --brand-orange: #ff8a65;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.7);
+  --surface-alt: rgba(240, 245, 251, 0.9);
+  --border: rgba(122, 143, 172, 0.18);
+  --border-strong: rgba(122, 143, 172, 0.28);
+  --shadow-soft: 0 20px 60px rgba(21, 32, 51, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-strong);
+  line-height: 1.05;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: clamp(2.9rem, 6vw, 5.2rem);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+p {
+  line-height: 1.7;
+}
+
+#root {
+  min-height: 100vh;
+}
